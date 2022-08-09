@@ -18,7 +18,6 @@ import lombok.AllArgsConstructor;
 @RequestMapping(value = "/workers")
 public class WorkerResource {
 
-	
 	private WorkerRepository repository;
 
 	@GetMapping
@@ -26,12 +25,11 @@ public class WorkerResource {
 		List<Worker> list = repository.findAll();
 		return ResponseEntity.ok(list);
 	}
-	
+
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id) {
 		Worker obj = repository.findById(id).get();
 		return ResponseEntity.ok(obj);
 	}
-	
 
 }
