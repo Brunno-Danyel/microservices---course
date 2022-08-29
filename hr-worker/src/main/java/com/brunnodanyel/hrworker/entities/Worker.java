@@ -26,4 +26,5 @@ public class Worker implements Serializable {
 	private String name;
 	private Double dailyIncome;
 
+
 }
