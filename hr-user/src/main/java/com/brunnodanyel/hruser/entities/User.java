@@ -24,7 +24,7 @@ import lombok.Setter;
 @Setter
 @EqualsAndHashCode(of = "id")
 @Table(name = "tb_user")
-@Entity
+@Entity 
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
