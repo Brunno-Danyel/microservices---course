@@ -4,3 +4,5 @@
 ````
 yarn
 yarn dev
+
+## Criando Docker ##
