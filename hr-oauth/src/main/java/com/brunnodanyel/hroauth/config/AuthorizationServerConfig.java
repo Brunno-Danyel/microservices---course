@@ -52,7 +52,9 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 	@Override
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-		endpoints.authenticationManager(authenticationManager).tokenStore(jwtTokenStore).accessTokenConverter(accessTokenConverter);
+		endpoints.authenticationManager(authenticationManager)
+		.tokenStore(jwtTokenStore)
+		.accessTokenConverter(accessTokenConverter);
 	}
 
 }
